@@ -3,7 +3,7 @@ window.onload = function () {
 }
 /** */
 const options = ['papel', 'piedra', 'tijera']
-const optionsImages = ['../PPT/img/papel.ico', '../PPT/img/piedra.ico', '../PPT/img/tijera.ico']
+const optionsImages = ['./img/papel.ico', './img/piedra.ico', './img/tijera.ico']
 
 const tijeraBtn = document.getElementById('elemento-tijera');
 const papelBtn = document.getElementById('elemento-papel');
