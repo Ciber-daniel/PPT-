@@ -1,66 +1,89 @@
 body {
-    padding: 0px;
-    margin: 0px;
-    font-family:'Lobster';
-    background-image: url('../img/background.jpg');
-    background-size: cover;
-    background-position: fixed;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lobster";
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .global_container {
-    background-color: rgba(243, 237, 239, 0.541);
-    width: 80%;
-    margin: 0 auto;
-    height: 100vh;
+  background-color: rgba(243, 237, 239, 0.541);
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .container_title {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3rem;
 }
 
 .container_title p {
-    text-align: center;
-} 
-
-.batle_container {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
-}
-
-.space_custom {
-    border: 1px solid rgba(0, 0, 170, 0.404);
-    background: linear-gradient(to bottom, rgba(0, 0, 170, 0.26), rgba(218, 86, 236, 0.664));
-    display: flex;
-    align-items: center;
-    width: 130px;
-    height: 360px
-}
-
-.container_space img {
-    width: 100px;
-    height: 100px;
-}
-
-.vs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-
-.machine_option {
-    border: 1px solid rgba(0, 0, 170, 0.404);
-    background: linear-gradient(to bottom, rgba(0, 0, 170, 0.26), rgba(218, 86, 236, 0.664));
-    display: flex;
-    align-items: center;
-    width: 130px;
+  text-align: center;
 }
 
 .game_container {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+}
+
+.container_space {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 170, 0.404);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 170, 0.26),
+    rgba(218, 86, 236, 0.664)
+  );
+  align-items: center;
+  width: 9rem;
+  height: 22rem;
+}
+
+.icon_option img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.vs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.game_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-height: 800px) {
+  .global_container {
+    width: 100%;
+  }
+
+  .container_title {
+    font-size: 3rem;
+  }
+
+  .game_container {
+    height: 70%;
+    align-items: center;
+  }
+
+  .icon_option img {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .container_space {
+    width: 15rem;
+    height: 40rem;
+  }
 }

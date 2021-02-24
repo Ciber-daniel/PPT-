@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta>
-    <link rel="shortcut icon" href="./img/game.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+  <head>
+    <meta />
+    <link rel="shortcut icon" href="./img/game.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="global_container">
-        <div class="container_title">
-            <h1>
-                ¿Te atreves a jugar?
-            </h1>
-            <p>
-                Selecciona una opcion
-            </p>
+      <div class="container_title">
+        <h1>¿Te atreves a jugar?</h1>
+        <p>Selecciona una opcion</p>
+      </div>
+      <!-- Options -->
+      <div class="game_container">
+        <div class="container_space">
+          <div id="elemento-papel" data-index="1" class="icon_option">
+            <img src="./img/papel.ico" alt="" />
+          </div>
+          <br />
+          <div id="elemento-piedra" data-index="2" class="icon_option">
+            <img src="./img/piedra.ico" alt="" />
+          </div>
+          <br />
+          <div id="elemento-tijera" data-index="3" class="icon_option">
+            <img src="./img/tijera.ico" alt="" />
+          </div>
         </div>
-        <div class="game_container">
-            <div class="space_custom">
-                <div class="container_space .fadeInDown">
-                    <div id="elemento-papel" data-index="1" class="icon_option"><img src="./img/papel.ico" alt=""
-                            style="margin-left: 15px;">
-                    </div>
-                    <br>
-                    <div id="elemento-piedra" data-index="2" class="icon_option"><img src="./img/piedra.ico" alt=""
-                            style=" margin-left: 15px;">
-                    </div>
-                    <br>
-                    <div id="elemento-tijera" data-index="3" class="icon_option"><img src="./img/tijera.ico" alt=""
-                            style="margin-left: 15px;">
-                    </div>
-                </div>
-            </div>
-
-            <div class="vs">
-                VS
-            </div>
-            <div class="machine_option">
-                <div id="machine_response">
-                    <img src="./img/game.ico" alt="">
-                </div>
-            </div>
+        <div class="vs">VS</div>
+        <div class="container_space">
+          <div id="machine_response">
+            <img src="./img/game.ico" alt="" />
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/script.js"></script>
-</body>
-
+  </body>
 </html>
