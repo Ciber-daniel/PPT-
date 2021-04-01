@@ -34,7 +34,7 @@ async function wait(ms) {
 }
 
 async function passOptionsAndGetLastIndex() {
-  const times = 20;
+  const times = 15;
   let startingAt = Math.floor(Math.random() * options.length);
   const machineElement = document.getElementById("machine_response");
 
@@ -61,7 +61,7 @@ async function startEvaluation(itemIndex) {
   const personSelected = options[itemIndex];
   if (personSelected === "tijera") {
     if (machineSelected === "papel") {
-      swal("Buen trabajo!", "Ganaste la partida!", "success");
+      swal("Buen trabajo!", "Ganaste la partid  a!", "success");
       optionsContainer.innerHTML = `${htmlWrite}`;
       addListeners();
     } else if (machineSelected === "tijera") {
